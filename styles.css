@@ -1,0 +1,156 @@
+body {
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    background-color: #e7dfe6;
+}
+
+span {
+    font-weight: 900;
+    font-size: 16px;
+    margin: 32px 0;
+}
+
+input, textarea {
+    border-radius: 8px;
+    padding: 8px;
+    border: none;
+    font-family: inherit;
+    display: block;
+    background-color: #eee;
+    margin-top: 8px;
+}
+
+a {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(203, 148, 184);
+    &:hover {
+        color: rgb(182, 118, 159);;
+    }
+    &:active {
+        color: rgb(133, 69, 111);
+    }
+    &:visited {
+        color: rgb(120, 80, 107);
+    }
+}
+
+td {
+    padding: 4px 8px;
+}
+
+th {
+    border-bottom: 2px solid #8b6185;
+}
+
+td:not(:last-child), th:not(:last-child) {
+    border-right: 2px solid #8b6185;
+}
+
+.image-wrapper {
+    border-radius: 50%;
+    border: 2px solid rgb(161, 126, 149);
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    overflow: hidden;
+
+    @media (max-width: 650px) {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+.profile-img {
+    max-width: 400px;
+    max-height: 300px;
+    height: auto;
+
+    @media (max-width: 650px) {
+        max-width: 180px;
+        max-height: 150px;
+    }
+}
+
+.container {
+    margin: 36px 24px;
+    max-width: 90%;
+    padding: 12px 24px;
+
+    border-radius: 16px;
+    background-color: rgb(215, 206, 214);
+    /* padding: 16px; */
+    margin-bottom: 16px;
+}
+
+.form-block-wrapper {
+    display: block;
+    padding: 8px 0 0;
+    margin-bottom: 8px;
+    
+}
+
+.card {
+    background-color: rgb(203, 186, 197);
+    border: 2px solid rgb(161, 126, 149);
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.btn {
+    background-color: rgb(183, 144, 169);
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 24px;
+    &:hover {
+        background-color: rgb(161, 126, 149);
+        color: rgb(36, 33, 35);
+    }
+}
+
+.table {
+    margin: 10px 0;
+    border: 2px solid rgb(161, 126, 149);
+    width: 450px;
+    border-collapse: separate;
+    background-color: rgb(215, 206, 214);
+    border-radius: 12px;
+    border-spacing: 0;
+
+    @media (max-width: 650px) {
+        width: 280px;
+    }
+}
+
+.responsibilities, .tech-stack {
+    padding-left: 24px;
+}
+
+.header {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.left-side {
+    margin-top: 24px;
+    margin-right: 32px;
+}
+
+.right-side {
+    width: 60%;
+    @media (max-width: 650px) {
+        width: 40%;
+    }
+}
+
+.contact {
+    margin: 40px 0 16px;
+}
